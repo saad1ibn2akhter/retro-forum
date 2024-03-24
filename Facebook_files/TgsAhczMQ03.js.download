@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("useAccessibilityAlerts",["react"],(function(a,b,c,d,e,f,g){"use strict";var h;b=h||d("react");var i=b.useCallback,j=b.useEffect,k=b.useRef,l=b.useState;function a(){var a=k(null),b=k(new Map()),c=k(0),d=l([]),e=d[0],f=d[1];j(function(){return function(){a.current!=null&&a.current()}},[]);var g=i(function(a,d){var e=c.current++;a={key:e,message:a,options:d};b.current.set(e,a);f(Array.from(b.current.values()));return function(){b.current["delete"](e),f(Array.from(b.current.values()))}},[]);d=i(function(b,c){a.current!=null&&a.current();b=g(b,c);a.current=b;return b},[g]);return[e,d]}g["default"]=a}),98);

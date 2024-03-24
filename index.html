@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="text-red"> TerTo Forum </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        .font{
+          font-family: "Poppins", sans-serif;
+        }
+        .container2{
+          max-width: 1170px;
+          width: 100%;
+        }
+       
+    </style>
+</head>
+<body class="font">
+
+    <nav class="container2 mx-auto flex justify-between items-center my-8 px-2">
+        <div class="text-[48px]">
+            <button><h1 class="font-bold"><span class="text-violet-600">T</span>er<span class="text-gray-500">T</span><spa class="text-red-500">o</span></h1></button>
+        </div>
+        <div class="hidden lg:block flex items-center space-x-4">
+            <div class="tooltip" data-tip="Home"><img placeholder="Home" src="home.jpeg" class="h-[36px] bg-gray-800 w-[36px] p-[1px] rounded-full" alt="home"></div>
+            <div class="tooltip" data-tip="Edit"><img placeholder="Pen" src="pen.png" class="h-[36px] bg-gray-800 w-[36px] p-[1px] rounded-full" alt="home"></div>
+            <div class="tooltip" data-tip="Add"><img placeholder="Message" src="member.jpeg" class="h-[36px] bg-gray-800 w-[36px] p-[1px] rounded-full" alt="home"></div>
+            <div class="tooltip" data-tip="Milestone"><img placeholder="Flag" src="flag.jpeg" class="h-[36px] bg-gray-800 w-[36px] p-[1px] rounded-full" alt="home"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-success bg-blue-500 text-white -translate-y-3">Sign In</button>
+        </div>
+            <div class="block lg:hidden dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn m-1"><img src="menu.png" class="h-[24px] w-[24px]" alt=""></div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-green-400">Sign In</a></li>
+                  <li><a class="text-green-600">Log In</a></li>
+                  <li><a class="">
+                    <div class="tooltip flex items-center space-x-3" data-tip="Home">
+                        <img placeholder="Home" src="home.jpeg" class="h-[24px] bg-gray-800 w-[24px] p-[1px] rounded-full" alt="home">
+                        <h1>Home</h1>
+                    </div>
+                  </a></li>
+                  <li><a class="">
+                    <div class="tooltip flex items-center space-x-3" data-tip="Edit">
+                        <img placeholder="Home" src="pen.png" class="h-[24px] bg-gray-800 w-[24px] p-[1px] rounded-full" alt="home">
+                        <h1>Edit</h1>
+                    </div>
+                  </a></li>
+                  <li><a class="">
+                    <div class="tooltip flex items-center space-x-3" data-tip="Add">
+                        <img placeholder="Home" src="member.jpeg" class="h-[24px] bg-gray-800 w-[24px] p-[1px] rounded-full" alt="home">
+                        <h1>Add</h1>
+                    </div>
+                  </a></li>
+                  <li><a class="">
+                    <div class="tooltip flex items-center space-x-3" data-tip="Flag">
+                        <img placeholder="Home" src="flag.jpeg" class="h-[24px] bg-gray-800 w-[24px] p-[1px] rounded-full" alt="home">
+                        <h1>Flag</h1>
+                    </div>
+                  </a></li>
+                </ul>
+              </div>
+    </nav>
+
+    <header class="container2 mx-auto my-8 rounded-3xl ">
+        <section class="rounded-3xl">
+            <div class=" carousel rounded-3xl bg-gray-950 px-2 lg:w-full lg:px-0">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="bgbanner.png" class="w-full h-[50vh] lg:h-[75vh]" />
+                <div class="absolute space-y-2 flex flex-col items-center space-x-9 justify-center transform -translate-y-1/2 left-5 right-5 top-1/2 lg:space-y-4 lg:flex-row">
+                    <div class="pt-2 max-w-[100%] space-x-[32px] lg:pt-0 lg:max-w-[50%] lg:space-x-0">
+                        <div>
+                            <h1 class="text-[32px] text-center lg:text-[58px] lg:text-left font-extrabold text-white">Welcome to the <br> <span class="text-violet-600">T</span>er<span class="text-gray-500">T</span><span class="text-red-500">o</span> Forum</h1>
+                            <h1 class="text-[14px] text-center mx-auto lg:text-[16px]  lg:text-left text-gray-300 pb-2">Join TerTo Forum, a vibrant blogging community. Share opinions, win a forum coffee mug!</h1>
+                        </div>
+
+                        <div class="flex flex-col justify-center lg:flex-row lg:justify-start items-center space-y-2 lg:space-x-2 lg:space-y-0">
+                            <input id="searchText" type="text" class="w-full lg:w-auto px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Search Anything Here">
+                            <button onclick="handleSearchData()" class="w-full lg:w-auto px-5 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="hidden lg:block bg-white p-10 text-[20px] text-gray-700 rounded-3xl space-y-2">
+                        <div class="flex items-center space-x-3 justify-between">
+                            <h1 class="pr-3">Registered User </h1>
+                            <h1 class="font-medium">505</h1>
+                        </div>
+                        <div class="flex items-center space-x-3 justify-between">
+                            <h1>Forum</h1>
+                            <h1 class="font-medium">2</h1>
+                        </div>
+                        <div class="flex items-center space-x-3 justify-between">
+                            <h1>Topics</h1>
+                            <h1 class="font-medium">5</h1>
+                        </div>
+                        <div class="flex items-center space-x-3 justify-between">
+                            <h1>Replies</h1>
+                            <h1 class="font-medium">657</h1>
+                        </div>
+                    </div>
+                </div>
+              </div>  
+             
+            </div>
+          </section>
+
+          <section >
+            <div class="block max-w-[85%] text-center mx-auto -translate-y-6 shadow-lg lg:hidden bg-green-100  p-10 border-green-500  text-[16px] text-gray-700 rounded-3xl space-y-2">
+                <div class="flex items-center space-x-3 justify-between">
+                    <h1 class="pr-3">Registered User </h1>
+                    <h1 class="font-medium">505</h1>
+                </div>
+                <div class="flex items-center space-x-3 justify-between">
+                    <h1>Forum</h1>
+                    <h1 class="font-medium">2</h1>
+                </div>
+                <div class="flex items-center space-x-3 justify-between">
+                    <h1>Topics</h1>
+                    <h1 class="font-medium">5</h1>
+                </div>
+                <div class="flex items-center space-x-3 justify-between">
+                    <h1>Replies</h1>
+                    <h1 class="font-medium">657</h1>
+                </div>
+            </div>
+          </section>
+    </header>
+
+    <main class="container2 mx-auto ">
+        <!--lets discuss and dynamic blog reading  -->
+        <section class="my-8 pb-4">
+            <div class="text-center">
+                <h1 class="text-[18px] lg:text-[36px] font-bold capitalize" id="category">lets discuss</h1>
+                <h1 class="text-[14px] px-2 mb-4 lg:text-[16px] lg:px-1 text-gray-500 lg:mb-6" id="category-description" >TerTo Forum fosters creativity and connection. Users input keywords to spark engaging discussions on comedy, coding, or music.</h1>
+            </div>
+            
+
+            <div class="flex justify-center">
+                <span id="spinner" class="loading loading-dots loading-lg hidden text-green-400"></span>
+                <span id="main-spinner" class="loading loading-ring loading-lg hidden text-red-400"></span>
+            </div>
+            <div class="flex flex-col justify-center lg:flex-row lg:justify-between">
+                
+                <div class="w-[100%] lg:w-[65%]" id="news-container">
+                    
+                </div>
+
+                 <div class="w-[100%] bg-gray-100 p-6 rounded-lg lg:w-[30%]">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h1 class="text-[18px] font-medium">Titles </h1>
+                        </div>
+                        <div class="flex space-x-1 items-center">
+                            <img src="correct.png" class="w-[28px] rounded-2xl h-[28px]" alt="">
+                            <h1 class="text-gray-500">Mark as read ( <span id="totalSavedPost">0</span> )</h1>
+                            
+                        </div>
+                    </div>
+                    <!-- main fnc -->
+                    <div id="MarkedPost-container" class="text-left">
+                                
+                    </div>
+                 </div>
+            </div>
+
+
+        </section>
+        <section class=" mt-4 p-0 lg:my-6 bg-violet-950 lg:p-16 rounded-3xl">
+            <div class="flex flex-col-reverse lg:flex-row justify-between items-center">
+
+                <div class="text-white  max-w-[95%] space-y-3 max-h-[50vh] lg:max-w-[70%] ">
+                    <div><h1 class="text-[22px] font-bold text-center lg:text-[45px] lg:text-left">Join Our Forum</h1></div>
+                    <div><h1 class="text-[14px] text-gray-400 text-center lg:text-[16px] lg:text-left">Join our vibrant TerTo Forum community! Share insights, connect with like-minded individuals, and explore diverse topics together. Join us today!</h1></div>
+                    <div class="flex justify-center items-center mb-4 pb-2 lg:justify-start"><button class="btn btn-secondary text-center bg-blue-600 text-white border-none lg:text-left">Register Now</button></div>
+                </div>
+
+                <div class="">
+                    <img src="joinforum.png" alt="">
+                </div>
+            </div>
+          </section>
+        
+          <section class="my-8">
+            <div class="text-center">
+                <h1 class="text-[18px] lg:text-[36px] font-bold capitalize" id="category">Latest Posts</h1>
+                <h1 class="text-[14px] px-4 mb-4 lg:text-[16px] lg:px-1 text-gray-500 lg:mb-6">Discover the latest posts on TerTo Forum: engaging discussions, insightful opinions, and diverse perspectives await. Join the conversation today!</h1>
+            </div>
+
+            <div class="grid grid-cols-1 space-y-3 lg:grid-cols-3 lg:space-y-0" id="latest-news-container">
+               
+            </div>
+          </section>
+    </main>
+
+    <footer class="bg-pink-50 text-center p-10 mt-12 lg:mt-16">
+        <div class="text-[24px] font-bold pt-2"><span class="text-violet-600">T</span>er<span class="text-gray-500">T</span><spa class="text-red-500">o</span></div>
+        <div class="text-[14px] font-light text-gray-600 px-3">Explore TerTo: a hub for diverse discussions, shared insights, and vibrant community connections. Join us now!</div>
+        <div class="flex justify-center space-x-5 items-center my-4">
+            <button><img src="fb.png" class="w-[28px] h-[28px]" alt=""></button>
+            <button><img src="messanger.png" class="w-[28px] h-[28px]" alt=""></button>
+            <button><img src="twitter.png" class="w-[28px] h-[28px]" alt=""></button>
+            <button><img src="gitt.png" class="w-[28px] h-[28px]" alt=""></button>
+        </div>
+        <hr>
+        <div class="py-3 text-[14px] text-gray-700">
+            <h1>&copy; 2024 All Rights Reserved</h1>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
